@@ -1,0 +1,381 @@
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(40, 17, 84, 100);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--purple300);
+  outline: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: var(--purple300);
+  color: #fff;
+  font-size: 1.4em;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav #nav-brand a {
+  font-weight: 800;
+}
+
+#hero {
+  background-image: url(images/hero_image.png);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#hero .hero-content {
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 20px;
+}
+
+#hero .hero-content h1 {
+  font-size: 80px;
+  line-height: 130px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#hero .hero-content h3 {
+  padding: 5px;
+  line-height: 90px;
+  font-size: 30px;
+}
+
+#hero .hero-content p {
+  padding: 5px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#music {
+  color: white;
+  background-color: var(--purple500);
+  text-align: center;
+  background-image: none;
+  padding: 10px;
+  height: 33rem;
+}
+
+#music h2 {
+  padding: 10px;
+}
+
+#music .trial-music h5 {
+  padding: 10px;
+  font-weight: 800;
+  text-align: start;
+}
+
+#music .trial-music button {
+  padding: 10px;
+  background-color: var(--red600);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  outline: none;
+  margin: 10px;
+  font-size: 15px;
+}
+
+#about-music-container .trial-music p {
+  font-size: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.ipad-iphone-img,
+.mac {
+  width: 98%;
+  height: 95%;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+#about-music-container {
+  margin-top: 24rem;
+}
+
+#about-music-container .about-music {
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+#about-music-container .about-music h4 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#about-music-container .about-music p {
+  font-size: 15px;
+  font-weight: 10;
+  padding: 10px;
+  margin: 10px;
+  line-height: 20px;
+}
+
+#about-music-container .about-music button {
+  padding: 10px;
+  background-color: var(--purple300);
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 15px;
+  margin: 30px;
+}
+
+#video {
+  background-image: url(images/video.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+#video .video-content {
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+  font-weight: 300;
+}
+
+#video .video-content h3 {
+  font-size: 20px;
+  line-height: 130px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#video .video-content p {
+  padding: 5px;
+  font-size: 15px;
+  word-spacing: 2px;
+  line-height: 20px;
+}
+
+section {
+  scroll-margin: 50px;
+}
+
+#gift-card .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+#gift-card img {
+  width: 40%;
+}
+
+#gift-card .card-content {
+  padding: 3%;
+}
+
+#gift-card h3 {
+  margin-bottom: 2%;
+  padding: 5px;
+}
+
+#gift-card p {
+  font-size: 15px;
+  padding: 5px;
+}
+
+#gift-card #already {
+  padding: 15px 0 15px 5px;
+  border-bottom: 1px solid gray;
+}
+
+#gift-card button {
+  padding: 10px 15px;
+  background-color: var(--purple300);
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+footer {
+  width: 100%;
+  color: white;
+}
+
+footer .footer-upper .container {
+  display: flex;
+  background-color: var(--purple600);
+  padding: 20px;
+}
+
+footer .footer-upper .container .footer-links {
+  width: 33%;
+  padding: 30px;
+}
+
+footer .footer-upper .container .footer-links h4 {
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+footer .footer-upper .container .footer-links li {
+  font-size: 12px;
+  text-align: start;
+  padding: 3px 10px 2px 0;
+}
+
+footer .footer-upper .container .footer-links h4::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+footer .footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.tombol {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav #nav-link {
+    position: relative;
+    right: -300px;
+    transition: right 0.3s ease-in-out; /* Transisi untuk animasi mulus */
+  }
+
+  nav #nav-link a {
+    background-color: #281154;
+    padding: 5px;
+  }
+
+  nav #nav-link.active {
+    right: 0; /* Pindah ke posisi yang diinginkan */
+  }
+
+  nav .tombol {
+    display: block; /* Pastikan tombol terlihat di layar kecil */
+  }
+
+  #hero .hero-content h1 {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  #hero .hero-content h3 {
+    padding: 5px;
+    line-height: 40px;
+    font-size: 25px;
+  }
+
+  #hero .hero-content p {
+    text-align: start;
+    padding: 10px;
+  }
+
+  .ipad-iphone-img img {
+    width: 70%;
+    height: 100%;
+  }
+
+  #about-music-container .about-music img {
+    width: 80%;
+  }
+
+  #about-music-container {
+    margin-top: 2rem;
+  }
+
+  #gift-card .container {
+    display: block;
+  }
+  #gift-card .container button {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  #gift-card img {
+    width: 100%;
+  }
+
+  footer .footer-upper .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-upper .container .footer-links {
+    width: 100%;
+  }
+
+  footer .footer-upper .container .footer-links h4::after {
+    display: none;
+  }
+
+  footer .footer-upper .container .footer-links h4 {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psotipy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="nav-brand"><a href="#">Psotipy</a></div>
+      <div id="nav-link">
+        <ul>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#music">Music</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#gift-card">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="tombol">
+        <span> <i class="bi bi-list"></i></span>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Psotipy</h1>
+          <h3>Your music, movies, and TV shows take center stage.</h3>
+          <p>
+            Psotipy is the best way to organize and enjoy the music, movies, and
+            TV shows you already have — and shop for the ones you want. Enjoy
+            all the entertainment Psotipy has to offer on your Mac and PC.
+          </p>
+        </div>
+      </section>
+
+      <section id="music">
+        <h2>Music</h2>
+        <div class="trial-music">
+          <h5>
+            Stream over 45 million songs, ad-free. Or download albums and tracks
+            to listen to offline. All the music in your personal myTunes library
+            — no matter where it came from — lives right alongside the Orange
+            Music catalog. Start your free three-month trial with no commitment,
+            and cancel anytime.
+          </h5>
+          <button>Start your free trial</button>
+          <p style="margin-bottom: 3%; margin-top: 1.4%">
+            Orange Music is available in myTunes, and for iOS and Android
+            devices.
+          </p>
+          <div class="ipad-iphone-img">
+            <img src="images/ipad-iphone.png" alt="iphone ipad" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about-music-container">
+        <div class="about-music">
+          <h4>The movie and TV collection you always wished for. Granted.</h4>
+          <p>
+            With over 100,000 movies and TV shows to choose from, there’s always
+            something great to watch on myTunes and if you watch on Orange TV
+            4K, you’ll be able to enjoy a tremendous selection of your favorite
+            content in 4K HDR. So get ready to enjoy episodes of your favorite
+            TV shows or hit movies you’ve been waiting to see — anytime,
+            anywhere. Just tap to play, or even download if you’re going
+            somewhere you won’t have Wi-Fi.
+          </p>
+          <button>Read More</button>
+          <div id="mac">
+            <img src="images/mac.png" alt="Mac" />
+          </div>
+        </div>
+      </section>
+
+      <section id="video">
+        <div class="video-content">
+          <h3>A world of entertainment. Available wherever you are.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo
+            non velit repellat alias saepe inventore repellendus? Molestias
+            suscipit eos tempora? Quae quaerat cumque in veritatis impedit
+            dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi
+            totam ad quas? Ipsam laudantium soluta delectus!
+          </p>
+        </div>
+      </section>
+
+      <section id="gift-card">
+        <div class="container">
+          <img src="images/gift_card.png" alt="" />
+          <div class="card-content">
+            <h3>Gift Card</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              cum explicabo, excepturi eaque commodi minima quas repellendus
+              assumenda facere hic, earum quasi iste asperiores molestiae
+              obcaecati laborum, voluptatum alias velit cupiditate! Quae soluta
+              sapiente quasi, iusto quam magnam doloribus natus quod eius, rerum
+              asperiores aspernatur. Illum neque sequi odit fuga. Already have
+              an Orange MyTunes Music Gift Card?
+            </p>
+
+            <p id="already">Already have an Orange MyTunes Music Gift Card?</p>
+            <br />
+            <button>Redeem</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-upper">
+        <div class="container">
+          <div class="footer-links">
+            <h4>Shop &amp; Learn</h4>
+            <ul>
+              <li>Music</li>
+              <li>Movies</li>
+              <li>Shows</li>
+              <li>Apps</li>
+              <li>Gift Cards</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Orange Store</h4>
+            <ul>
+              <li>Find a Store</li>
+              <li>Today at Orange</li>
+              <li>Financing</li>
+              <li>Orange Camp</li>
+              <li>Order Status</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Education &amp; Business</h4>
+            <ul>
+              <li>Orange &amp; Education</li>
+              <li>Shop for Collage</li>
+              <li>Orange &amp; Business</li>
+              <li>Shop for Business</li>
+              <li>Jobs</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>About Orange</h4>
+            <ul>
+              <li>Newsroom</li>
+              <li>Orange Leadership</li>
+              <li>Investors</li>
+              <li>Envents</li>
+              <li>Contact Orange</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-lower">
+        <p>Copyright © 2022 Do Some Coding</p>
+      </section>
+    </footer>
+
+    <script>
+      const tombol = document.querySelector(".tombol");
+      const navLink = document.getElementById("nav-link");
+      tombol.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
